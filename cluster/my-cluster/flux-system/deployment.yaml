@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: nb-devops
-        image: mcsheltonomondi/nb-devops
+        image: mcsheltonomondi/nb-devops:kiboko
         resources:
           limits:
             memory: "128Mi"

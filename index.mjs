@@ -4,7 +4,7 @@ import os from 'os'
 const app = express()
 
 app.get('/',(req,res)=>{
-    res.send(`Hello world @DevOps : response sent by : ${os.hostname}`)
+    res.send(`Hello world @Nairobi DevOps Community : response sent by : ${os.hostname}`)
 })
 
 app.listen(3130,()=>{
