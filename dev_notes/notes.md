@@ -54,6 +54,7 @@ flux in short
     - 
 * manifest files
     - .yaml
+    yaml aint markup language
     - deployment, docker secrets, services, nodeports, gitrepositories e.t.c
     - alway link/reference them withe the kustomization file
 * deleting flux

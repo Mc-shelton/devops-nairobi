@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nb-devops
+  namespace: default
+spec:
+  replicas: 5
+  selector:
+    matchLabels:
+      app: nb-devops
+  template:
+    metadata:
+      labels:
+        app: nb-devops
+    spec:
+      containers:
+      - name: nb-devops
+        image: mcsheltonomondi/nb-devops
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        ports:
+        - containerPort: 3130
