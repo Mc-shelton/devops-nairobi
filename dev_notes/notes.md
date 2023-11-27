@@ -33,7 +33,7 @@ flux in short
     - flux bootstrap
 
     ```bash
-    flux bootstrap github --owner=$GITHUB_USER --repository=<repo> --branch=main --path=./cluster/my-cluster --personal
+    flux bootstrap github --owner=$GITHUB_USER --repository=<repo> --branch=main --path=./cluster/my-cluster --personal --sync-garbage-collection
     ```
     flux bootstrap github: This specifies the source where Flux should look for Kubernetes manifests. In this case, it's GitHub.
 
